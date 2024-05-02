@@ -229,3 +229,18 @@ html, body {
 .testimonial-carousel .owl-dot.active {
   background: var(--primary);
 }
+
+
+.bottom-left-div {
+  font-size: larger;
+  font-family: arial;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #00B87B; /* Background color for the bottom-left div */
+  color: #2c3e50; /* Text color for better visibility */
+  padding: 10px; /* Padding for content inside the div */
+  z-index: 1; /* Set a higher z-index if needed to control stacking order */
+}
+
