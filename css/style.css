@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-  --primary: #00B87B;
+  --primary: #00b87b;
   --secondary: #314355;
-  --light: #F2F2F2;
-  --dark: #2C3E50;
+  --light: #f2f2f2;
+  --dark: #2c3e50;
 }
 
 .test {
@@ -13,21 +13,22 @@
   opacity: 75%;
   object-fit: cover !important;
   margin-top: 15px !important;
-  max-width:100% !important;
+  max-width: 100% !important;
 }
-html, body {
+html,
+body {
   margin: 0 !important;
   padding: 0 !important;
 }
 #spinner {
   opacity: 0;
   visibility: hidden;
-  transition: opacity .5s ease-out, visibility 0s linear .5s;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
   z-index: 99999;
 }
 
 #spinner.show {
-  transition: opacity .5s ease-out, visibility 0s linear 0s;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
   visibility: visible;
   opacity: 1;
 }
@@ -71,7 +72,7 @@ html, body {
 }
 
 .btn.btn-primary {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .typed-cursor {
@@ -126,11 +127,12 @@ html, body {
   }
 }
 
-.title {
+.myTitle {
   position: relative;
+  display: inline-block;
 }
 
-.title::before {
+.myTitle::before {
   position: absolute;
   content: "";
   width: 10px;
@@ -141,10 +143,11 @@ html, body {
   border-radius: 10px;
 }
 
-.title::after {
+.myTitle::after {
   position: absolute;
+  display: block;
+  width: 100%;
   content: "";
-  width: 320px;
   height: 2px;
   bottom: 0;
   right: 15px;
@@ -175,7 +178,7 @@ html, body {
   justify-content: center;
   background: var(--light);
   color: var(--primary);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .service-item:hover i {
@@ -190,9 +193,9 @@ html, body {
   top: 50%;
   left: 50%;
   font-size: 90px;
-  background: rgba(44, 62, 80, .9);
+  background: transparent;
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .portfolio-item:hover .portfolio-btn {
@@ -205,8 +208,8 @@ html, body {
 
 .portfolio-item i {
   opacity: 0;
-  transition: .3s;
-  transition-delay: .3s;
+  transition: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .portfolio-item:hover i {
@@ -230,7 +233,6 @@ html, body {
   background: var(--primary);
 }
 
-
 .bottom-left-div {
   font-size: larger;
   font-family: arial;
@@ -238,9 +240,8 @@ html, body {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #00B87B; /* Background color for the bottom-left div */
+  background-color: #00b87b; /* Background color for the bottom-left div */
   color: #2c3e50; /* Text color for better visibility */
   padding: 10px; /* Padding for content inside the div */
   z-index: 1; /* Set a higher z-index if needed to control stacking order */
 }
-
